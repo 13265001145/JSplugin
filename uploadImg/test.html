@@ -1,0 +1,17 @@
+<div id="six">
+666
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+<script src="uploadImg.js"></script>
+<script src="common.js"></script>
+
+<script>
+    var test = new uploadImg('six');  
+    test.init('http://h5web.com/uploadImg/uploads/images/20191008/5d9c5fa52d396.jpg');
+
+    $('#six').click(function(){
+        console.log(test.getSrc());
+    });
+
+
+</script>
